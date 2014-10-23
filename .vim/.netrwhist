@@ -1,10 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/gomio014/rails_projects/sample_app/spec/helpers'
-let g:netrw_dirhist_2='/Users/gomio014/rails_projects/sample_app/app/views/layouts'
-let g:netrw_dirhist_3='/Users/gomio014/rails_projects/sample_app/app/controllers'
-let g:netrw_dirhist_4='/Users/gomio014/rails_projects/sample_app/app/views/users'
-let g:netrw_dirhist_5='/Users/gomio014/rails_projects/sample_app/app/controllers'
-let g:netrw_dirhist_6='/Users/gomio014/rails_projects/sample_app/app/views/shared'
-let g:netrw_dirhist_7='/Users/gomio014/rails_projects/sample_app/app/views/static_pages'
-let g:netrw_dirhist_8='/Users/gomio014/.vim/bundle/vim-tomorrow-theme'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/gomio014/rails_projects/simple_blog/app/views/articles'
+let g:netrw_dirhist_2='/Users/gomio014/rails_projects/simple_blog/.bundle'
