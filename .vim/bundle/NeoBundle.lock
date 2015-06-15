@@ -1,2 +1,3 @@
-NeoBundleLock base16-vim 1ce4b842b43a1e744008cbef349341a6645662ee
+NeoBundleLock vim-indent-guides 4895e860258cd24c975255ef459af4b956107557
+NeoBundleLock vim-tomorrow-theme 8add71a5fada87b8db25971fd5807bb8a35fde13
 NeoBundleLock neobundle.vim c95539b8ec2c89d2182b514b665f795f7bb4fc11
