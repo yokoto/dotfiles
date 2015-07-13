@@ -1,5 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/gomio014/rails_projects/simple_blog/app/views/articles'
-let g:netrw_dirhist_2='/Users/gomio014/rails_projects/simple_blog/.bundle'
-let g:netrw_dirhist_3='/Users/gomio014/dotfiles'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/gomio014/oss_hack_weekend/minitest/lib'
