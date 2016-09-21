@@ -15,6 +15,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
+NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
@@ -22,6 +23,8 @@ NeoBundle 'chriskempson/vim-tomorrow-theme'
 "
 "vim-indnet-guies
 NeoBundle 'nathanaelkane/vim-indent-guides'
+"vim-json
+NeoBundle 'leshill/vim-json'
 
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=1
@@ -51,12 +54,11 @@ syntax enable
 syntax on
 filetype plugin indent on
 set background=dark
-
-set shiftwidth=2
-
+" Setting of tab
+set expandtab
 set tabstop=2
-
 set softtabstop=4
+set shiftwidth=2
 
 set number
 set numberwidth=4
