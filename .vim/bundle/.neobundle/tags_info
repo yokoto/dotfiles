@@ -1,4 +1,14 @@
+es.next.syntax.vim
+html5.vim
+javascript-libraries-syntax.vim
+lexima.vim
 neobundle.vim
+neocomplete.vim
+neosnippet
+neosnippet-snippets
 vim-indent-guides
 vim-json
+vim-jsx-pretty
+vim-slim
 vim-tomorrow-theme
+yajs.vim
