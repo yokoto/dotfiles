@@ -2,7 +2,7 @@ Setting of my .vimrc for private.
 
 0. git clone git@github.com:yokoto/dotfiles.git
 1. cd dotfiles
-2. git clone https://github.com/Shougo/neobundle.vim.git .vim/bundle/neobundle.vim.git
+2. git clone https://github.com/Shougo/neobundle.vim.git .vim/bundle/neobundle.vim
 3. sh dotfilesLink.sh
 4. vim anyfile
 5. :NeoBundleInstall # in normal mode
