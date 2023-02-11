@@ -7,6 +7,8 @@ if has('vim_starting')
   set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
 endif
 
+language C
+
 " Required:
 call neobundle#begin(expand('~/.vim/bundle/'))
 
@@ -33,6 +35,9 @@ NeoBundle 'othree/yajs.vim'
 NeoBundle 'maxmellon/vim-jsx-pretty'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'othree/es.next.syntax.vim'
+NeoBundle 'kchmck/vim-coffee-script'
+"vim-typescript
+NeoBundle 'leafgarland/typescript-vim'
 "vim-html5
 NeoBundle 'othree/html5.vim'
 "vim-slim
@@ -82,6 +87,15 @@ set shiftwidth=2
 set number
 set numberwidth=4
 set cursorline
+"viとの互換性を無効にする(INSERT中にカーソルキーが有効になる)
+set nocompatible
+"カーソルを行頭，行末で止まらないようにする
+set whichwrap=b,s,h,l,<,>,[,]
+"BSで削除できるものを指定する
+" indent  : 行頭の空白
+" eol     : 改行
+" start   : 挿入モード開始位置より手前の文字
+set backspace=indent,eol,start
 autocmd ColorScheme * highlight LineNr ctermfg=101
 
 " colors
