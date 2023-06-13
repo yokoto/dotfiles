@@ -12,12 +12,14 @@ if [ -f ${GIT_DIR}/git-completion.bash ] && [ -f ${GIT_DIR}/_git ]; then
   zstyle ':completion:*:*:git:*' script ${GIT_DIR}/git-completion.bash
   autoload -Uz compinit && compinit
 fi
-PS1="%F{white}%n@mbp%f:%F{cyan}%~%F{magenta}$(__git_ps1 "(%s)") %f$ "
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
-
+# `precmd` executed before each prompt.
+precmd() {
+  setopt PROMPT_SUBST; PS1="%F{white}%n@mbp%f:%F{cyan}%~%F{magenta}$(__git_ps1 "(%s)") %f$ "
+}
 # Manually added alias
 alias be='bundle exec'
 alias bi='bunlde install'
