@@ -20,6 +20,13 @@ GIT_PS1_SHOWUPSTREAM=auto
 precmd() {
   setopt PROMPT_SUBST; PS1="%F{white}%n@mbp%f:%F{cyan}%~%F{magenta}$(__git_ps1 "(%s)") %f$ "
 }
+# Add zsh plugins
+if [ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+  source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+if [ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+  source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 # Customize zsh history options
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 SAVEHIST=10000  # メモリ上に保存される履歴の数（history コマンドで確認できる履歴の数）
