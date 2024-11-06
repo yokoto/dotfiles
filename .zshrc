@@ -1,9 +1,9 @@
 # Override PS1 with git-prompt / git-completion.
 # 1. mkdir ~/.git
-# 2. curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git/.git-prompt.sh
+# 2. curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git/git-prompt.sh
 # 3. curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git/git-completion.bash
 # 4. curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -o ~/.git/_git
-GIT_DIR='/Users/toshihiro-yokota/.git'
+GIT_DIR='/Users/toshi.yokota/.git'
 if [ -f ${GIT_DIR}/git-prompt.sh ]; then
   source ${GIT_DIR}/git-prompt.sh
 fi

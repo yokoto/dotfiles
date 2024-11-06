@@ -1,13 +1,12 @@
 " Note: Skip initialization for vim-tiny or vim-small.
-if !1 | finish | endif
+if 0 | endif
 
-if has('vim_starting')
+if &compatible
   set nocompatible               " Be iMproved
-  " Required:
-  set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
 endif
 
-language C
+" Required:
+set runtimepath+=~/.vim/bundle/neobundle.vim/
 
 " Required:
 call neobundle#begin(expand('~/.vim/bundle/'))
@@ -100,4 +99,3 @@ autocmd ColorScheme * highlight LineNr ctermfg=101
 
 " colors
 colorscheme Tomorrow-Night-Bright
-
