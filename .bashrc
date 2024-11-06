@@ -10,7 +10,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Setup:
 # 1. mkdir ~/.git
 # 2. curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git/git-completion.bash
-# 3. curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git/.git-prompt.sh
+# 3. curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git/git-prompt.sh
 GIT_DIR='/Users/toshihiro-yokota/.git'
 if [ -f ${GIT_DIR}/git-completion.bash ]; then
   source ${GIT_DIR}/git-completion.bash
