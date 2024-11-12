@@ -18,7 +18,7 @@ GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
 # `precmd` executed before each prompt.
 precmd() {
-  setopt PROMPT_SUBST; PS1="%F{white}%n@mbp%f:%F{cyan}%~%F{magenta}$(__git_ps1 "(%s)") %f$ "
+  setopt PROMPT_SUBST; PS1="%F{white}%n@$(arch)%f:%F{cyan}%~%F{magenta}$(__git_ps1 "(%s)") %f$ "
 }
 # Add zsh plugins
 if [ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
